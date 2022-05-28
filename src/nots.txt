@@ -1,0 +1,35 @@
+props-
+<Navbar title="TextUtils" aboutText="About"></Navbar>
+export default function Navbar(props) {
+    <a className="navbar-brand" href="/">{props.title}</a>
+    <a className="nav-link" href="/">{props.aboutText}</a>
+
+//////////////////////////////////////////////////////////////////////////
+
+props type-
+its like data type
+Navbar.propTypes={
+    title:PropTypes.string,
+    aboutText:PropTypes.string
+}
+
+/////////////////////////////////////////////////////////////////////
+default props-
+Navbar.defaultProps={
+    title:'text here',
+    aboutText:'about here'
+
+
+}
+//////////////////////////////////////////////////////////////////////
+is required props-
+Navbar.propTypes={
+    title:PropTypes.string.isRequired,
+    aboutText:PropTypes.string
+
+
+}
+////////////////////////////////////////////////////////////////////////
+hook-
+{useState}
+const [text, setText]=useState('Enter text hear');
